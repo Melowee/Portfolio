@@ -1,0 +1,22 @@
+td{
+    width: 12.5%;
+    border: 1px black solid;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.jaquette{
+    height: 180px;
+}
+
+.crenaux{
+    height: 500px;
+}
+
+table{
+    margin-bottom:10%;
+}
+
+body{
+    margin-bottom:500px;
+}

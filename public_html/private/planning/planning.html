@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planning Sorties Episodes</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="stylePlanning.css" />
+    </head>
+    <body class="container-fluid">
+        <div class="container">
+            <h1><center>Planning de sorties d'épisodes</center></h1>
+            
+            <select id="jour">
+                <option value="">Jour de sortie</option>
+                <option value="Lundi">Lundi</option>
+                <option value="Mardi">Mardi</option>
+                <option value="Mercredi">Mercredi</option>
+                <option value="Jeudi">Jeudi</option>
+                <option value="Vendredi">Vendredi</option>
+                <option value="Samedi">Samedi</option>
+                <option value="Dimanche">Dimanche</option>
+            </select>
+            <input type="time" id="heure" min="0" max="24" placeholder="Heure de sortie" />
+            <input type="text" id="titre" placeholder="Titre de l'animé" />
+            <input type="text" id="urlImg" placeholder="URL de la jaquette" />
+            <input type="button" id="submit" value="Ajouter l'animé" />
+            
+            <br><br>
+            <input type="button" id="save" value="Sauvegarder" />
+            <table class="container">
+                <tr>
+                    <td></td>
+                    <td>Lundi</td>
+                    <td>Mardi</td>
+                    <td>Mercredi</td>
+                    <td>Jeudi</td>
+                    <td>Vendredi</td>
+                    <td>Samedi</td>
+                    <td>Dimanche</td>
+                </tr>
+                <tr class="crenaux" id="crenaux">
+                    <td></td>
+                    <td id="Lundi"></td>
+                    <td id="Mardi"></td>
+                    <td id="Mercredi"></td>
+                    <td id="Jeudi"></td>
+                    <td id="Vendredi"></td>
+                    <td id="Samedi"></td>
+                    <td id="Dimanche"></td>
+                </tr>
+            </table>
+            <select id="selectDelete">
+                <option value="">Sélectionner un aimé à supprimer</option>
+            </select>
+            <input type="button" id="delete" value="Supprimer cet animé" />
+        </div>
+        <script type"txt/javascript" src="animes.json"></script>
+        <script type"txt/javascript" src="scriptPlanning.js"></script>
+    </body>
+</html>
